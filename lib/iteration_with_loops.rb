@@ -8,7 +8,7 @@ row_index = 0
     element_index = 0 
     while element_index < src[row_index].count do
       if src[row_index][element_index].class==String 
-        joint << src[row_index][element_index].join(' ')
+        joint << src[row_index][element_index].join(' ').squeeze(' ')
       end 
       element_index += 1 
     end 
